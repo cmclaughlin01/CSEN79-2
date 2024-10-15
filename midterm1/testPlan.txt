@@ -1,0 +1,19 @@
+#Test Plan for midterm 1
+For testing I used a sperated program that compared the output
+of the ratnum program against a file of expected output. The ratnum
+program takes in the test.txt that contains the name of the 
+operation wanted to be done then four numbers which are inputed as
+the numerators and demonators. Once the operation is run it places 
+the same format as well as the output into a txt file named
+output.txt. This is fed into the examine.cxx along with the expected
+outputs to check if the operation were run correctly
+
+To run this program:
+$ make
+$ ./ratnumTest test.txt
+$ ./examine output.txt expectedOutcome.txt
+
+once run examine.cxx prints every test, what its doing and if the 
+test was passed. After all tests it prints out the amount of test 
+passed and how many of each operation was run in the test.
+
